@@ -9,15 +9,16 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write .",
-    "lint-staged": {
-      "*.{js, jsx,ts,tsx}": [
-        "eslint --quiet --fix"
-      ],
-      "*.{json,js,ts,jsx,tsx,html}": [
-        "prettier --write --ignore-unknown"
-      ]
-    },
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js, jsx,ts,tsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,js,ts,jsx,tsx,html}": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "private": true,
   "dependencies": {
