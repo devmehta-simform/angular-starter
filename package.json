@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky install && cp .husky.tmp/* .husky/_/ ",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -42,7 +42,7 @@
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.5",
-    "husky": "^8.0.0",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
